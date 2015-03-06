@@ -3,6 +3,7 @@ int value = 0;
 int previousValue = 0;
 
 void setup() {
+  // this changed the size to make it bigger, i personaly liked it
   size(1000, 700);
   // makes the background white...
   background(255);
