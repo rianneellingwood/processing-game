@@ -6,16 +6,16 @@ void setup() {
   // this changed the size to make it bigger, i personaly liked it
   size(1000, 700);
   // makes the background white...
-  background(255);
+  background(255, 255, 255);
 }
 
 //I'm gonna change this to circles and change their shape...
 void draw() {
-  
+
   fill(value);
   
   // notice how I'm multiplying the changing value by 0.7... what is it doing?
-  ellipse(mouseX, mouseY, value*0.7, value*0.7);
+   rect(mouseX,mouseY, value*1 , value*1 + 5);
 }
 
   // I wanted to be able to "clear" the drawing when I clicked the mouse... this worked and
@@ -25,7 +25,7 @@ void draw() {
   }
 
   void mouseMoved() {
-  if (value >= previousValue && value <= 255) {
+  if (value >= previousValue && value<= 255) {
     previousValue = value;
     value = value + 5;
   }
