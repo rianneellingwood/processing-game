@@ -3,7 +3,7 @@ int value = 0;
 int previousValue = 0;
 
 void setup() {
-  size(500, 500);
+  size(1000, 700);
   // makes the background white...
   background(255);
 }
